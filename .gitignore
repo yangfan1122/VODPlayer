@@ -1,0 +1,14 @@
+.actionScriptProperties
+.project
+.settings/
+bin-debug/
+bin-release/
+.idea/
+NTESPlayer.iml
+docs/
+out/
+bin/
+node_modules/
+html-template/test/
+html-template/*.mp4
+html-template/vodplayerstyle.min.css

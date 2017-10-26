@@ -1,0 +1,739 @@
+.vodplayerdiv {
+    width: 100%;
+    height: 100%;
+}
+.vodplayercontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+}
+.vodProgressBar {
+    position: absolute;
+    /*height: 8px;*/
+    height: 19px;
+    bottom: 34px;
+    text-align: center;
+    z-index: 8;
+    -webkit-box-sizing: border-box;
+    left: 10px;
+    cursor: pointer;
+}
+.vodBars {
+    position: relative;
+    height: 3px;
+    top: 8px;
+}
+.vodBarsHover {
+    height:5px;
+    top: 7px;
+    transition:top .2s, height .2s;
+    -moz-transition:top .2s, height .2s;
+    -webkit-transition:top .2s, height .2s;
+    -o-transition:top .2s, height .2s;
+}
+
+.vodProgressBg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255,255,255,0.2);
+}
+.vodLoadingBar {
+    position: absolute;
+    background-color: rgba(152,145,145,1);
+    width:0px;
+    height: 100%;
+}
+.vodLoadingBar div {
+    position: absolute;
+    background-color: rgba(152,145,145,1);
+    height: 100%;
+    width:0%;
+}
+.vodPlayingBar {
+    position: absolute;
+    background-color: rgba(240,42,36,1);
+    height: 100%;
+    width: 0%;
+}
+
+.vodFocusBarContainer div {
+    position: absolute;
+    background-color: rgb(255, 163, 88);/*美术提供的看点条颜色 #ffa358*/
+    height: 100%;
+    width: 0%;
+}
+
+/*.vodFocusBar {*/
+    /*position: absolute;*/
+    /*background-color: rgb(74, 26, 240);*/
+    /*height: 100%;*/
+    /*width: 0%;*/
+/*}*/
+.vodSlider {
+    display: block;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    z-index: 100;
+    top: 1px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) repeat-x -85px -148px;
+}
+.vodSliderShow {
+    height: 16px;
+    width: 16px;
+
+    transform:translate(0px,0px);
+    -webkit-transform:translate(0px,0px);
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    animation-name:dh;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name:dh;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes dh {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+}
+@-webkit-keyframes dh {
+    0%{
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+
+.vodCtrlContainer {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    z-index: 7;
+    -webkit-box-sizing: border-box;
+    /*padding: 0 10px;*/
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/bg.png) repeat-x -0px -0px;
+}
+.vodCtrlContainer:focus{
+    outline:none;
+}
+
+.vodBtns {
+    position: relative;
+}
+.vodPlayBtn {
+    width: 56px;
+    height: 40px;
+    position: absolute;
+}
+.vodPlayBtn div {
+    height: 15px;
+    width: 15px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -15px -90px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.vodPlayBtn:hover div {
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -0px -90px;
+}
+.vodPauseBtn {
+    width: 56px;
+    height: 40px;
+    position: absolute;
+}
+.vodPauseBtn div {
+    height: 15px;
+    width: 12px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -30px -90px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.vodPauseBtn:hover div {
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -42px -90px;
+}
+
+/*音量+时间;*/
+.vodVolumeBtnFull {
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -201px -130px;
+    top: 50%;
+    left: 26px;
+    -webkit-transform: translateX(-11px) translateY(-50%);
+    -ms-transform: translateX(-11px) translateY(-50%);
+    -moz-transform: translateX(-11px) translateY(-50%);
+    -o-transform: translateX(-11px) translateY(-50%);
+}
+.vodVolumeBtnHalf {
+    position: relative;
+    cursor: pointer;
+    width: 12px;
+    height: 15px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -189px -130px;
+    top: 50%;
+    left: 26px;
+    -webkit-transform: translateX(-11px) translateY(-50%);
+    -ms-transform: translateX(-11px) translateY(-50%);
+    -moz-transform: translateX(-11px) translateY(-50%);
+    -o-transform: translateX(-11px) translateY(-50%);
+}
+.vodVolumeBtnMuted {
+    position: relative;
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -219px -130px;
+    top: 50%;
+    left: 26px;
+    -webkit-transform: translateX(-11px) translateY(-50%);
+    -ms-transform: translateX(-11px) translateY(-50%);
+    -moz-transform: translateX(-11px) translateY(-50%);
+    -o-transform: translateX(-11px) translateY(-50%);
+}
+.vodVolumeBtn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 38px;
+}
+
+.vodVolumeBar {
+    position: absolute;
+    height: 40px;
+    left: 76px;
+    cursor: pointer;
+
+    width: 60px;
+    /*transition:width .2s ease-in-out;*/
+    /*-moz-transition:width .2s ease-in-out;*/
+    /*-webkit-transition:width .2s ease-in-out;*/
+    /*-o-transition:width .2s ease-in-out;*/
+    /*width: 0px;*/
+}
+.vodVolumeBarHover {
+    transition:width .2s ease-in-out;
+    -moz-transition:width .2s ease-in-out;
+    -webkit-transition:width .2s ease-in-out;
+    -o-transition:width .2s ease-in-out;
+    width: 60px;
+}
+/*.vodVolumeBarOut {*/
+    /*transition:width .3s ease-in-out;*/
+    /*-moz-transition:width .3s ease-in-out;*/
+    /*-webkit-transition:width .3s ease-in-out;*/
+    /*-o-transition:width .3s ease-in-out;*/
+    /*width: 0px;*/
+/*}*/
+
+.vodVolumeBars {
+    position: relative;
+    top: 50%;
+}
+.vodVolumeBg {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color:rgba(255,255,255,0.2);
+}
+.vodVolumeMoving {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width:20%;
+    height: 3px;
+}
+.vodVolumeSlider {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: white;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    top: 14px;
+    display: block;
+    z-index: 10;
+}
+.vodTime {
+    position: absolute;
+    font-family:Arial;
+    font-size: 14px;
+    color: white;
+    top: 0px;
+    padding-top: 13px;
+    left: 60px;
+    height:27px;
+    width: 120px;
+    z-index: 6;
+    /*cursor: default;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.vodCheckContainer {
+    right: 121px;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    font-family: Arial, Microsoft YaHei;
+    font-size: 14px;
+    color: #bababa;
+    top: 10px;
+    cursor: pointer;
+    z-index:5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.vodSetting {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 86px;
+}
+.vodSetting div {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -82px -90px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.vodSetting:hover div {
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -64px -90px;
+}
+
+.vodQualityDisabled {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 48px;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    color: #bababa;
+    top: 10px;
+    cursor: default;
+    z-index:5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.vodQuality {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 48px;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    color: #bababa;
+    top: 10px;
+    cursor: pointer;
+    z-index:5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.vodQuality:hover {
+    color: white;
+}
+
+.vodFull {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+}
+.vodFullBtn {
+    cursor: pointer;
+    width: 20px;
+    height: 16px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -237px -0px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.vodFullBtn:hover {
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -218px -0px;
+}
+.vodExitFullBtn {
+    cursor: pointer;
+    width: 19px;
+    height: 16px;
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -199px -0px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.vodExitFullBtn:hover {
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -180px -0px;
+}
+
+
+
+.vodAlphaOut {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+}
+.vodAlphaIn {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 100;
+    filter: alpha(opacity=100);
+}
+
+
+
+
+.vodVideoContainer {
+    height: 100%;
+    position:relative;
+    cursor: pointer;
+}
+.vodVideoContainer:focus{
+    outline:none;
+}
+.vodVideo {
+    width: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+/*右键菜单*/
+.vodMenu{
+    z-index: 200;
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    width: 150px;
+    background-color:rgba(0,0,0,0.5);
+}
+.vodMenu div{
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    height: 24px;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color:rgba(0,0,0,0.5);
+    vertical-align: middle;
+    horiz-align: left;
+    list-style-type:none;
+    color: aliceblue;
+    font-size: 13px;
+    font-family: Arial;
+}
+.vodMenu div a{
+    display: block;
+    color: aliceblue;
+    background-color:rgba(0,0,0,0);
+    text-decoration: none;
+}
+.vodMenu div.active{
+    background-color:rgba(102,102,102,0.8);
+}
+.vodMenu div.active a{
+    color: #FFFFFF;
+    background-color:rgba(102,102,102,0);
+}
+
+
+
+/*设置菜单*/
+.vodSettingPanel {
+    color:#ffffff;
+    font-family:Arial;
+    z-index: 180;
+    position: absolute;
+    top: -9990px;
+    left: -9990px;
+    width: 100px;
+    height:83px;
+    margin-bottom: 10px;
+    background-color:rgba(0,0,0,.7);
+}
+.vodSettingPanel div {
+    font-size: 14px;
+    position: relative;
+    height: 36px;/*文字的行高和容器的高度相同即可垂直居中*/
+    line-height:36px;
+    text-align: center;
+}
+.vodSettingPanelLine {
+    list-style-type:none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+}
+.vodSettingItems {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.vodSettingItems img {
+    float: left;
+    margin-left: 17px;
+    margin-top: 14px;
+}
+.vodSettingItems span {
+    float: right;
+    margin-right: 34px;
+}
+
+.vodSettingItemHover {
+    background-color:rgba(153,153,153,.7);
+    color: #FFFFFF;
+}
+
+/*设置清晰度*/
+.vodQualityPanel {
+    font-family:Arial;
+    z-index: 170;
+    position: absolute;
+    top: -9990px;
+    left: -9990px;
+    width: 100px;
+    height:82px;
+    margin-bottom: 10px;
+    background-color:rgba(0,0,0,.7);
+}
+.vodQualityPanel div {
+    font-size: 14px;
+    position: relative;
+    height: 36px;
+    line-height:36px;
+    text-align: center;
+}
+.vodQualityItems {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.vodQualityItems img {
+    float: left;
+    margin-left: 17px;
+    margin-top: 14px;
+}
+.vodQualityItems span {
+    float: right;
+    margin-right: 34px;
+}
+.vodQualityItemHover {
+    background-color:rgba(153,153,153,.7);
+    color: #FFFFFF;
+}
+
+/*错误提示*/
+.vodTipsContainer {
+    width: 100%;
+    position: absolute;
+}
+.vodTipsContent {
+    font-family:Microsoft YaHei;
+    font-size: 16px;
+    color:#f0f0f0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.vodTipsImg {
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/*loading*/
+.vodLoading {
+    display: none;
+    position: absolute;
+    z-index: 120;
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    /* pic size : 1408*64 */
+    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/loadingsprite.png) no-repeat -0px -0px;
+    -moz-animation: loadingAnimation 1s steps(22) infinite;
+    -webkit-animation: loadingAnimation 1s steps(22) infinite;
+    animation: loadingAnimation 1s steps(22) infinite;
+}
+@-webkit-keyframes loadingAnimation {
+    0% {
+        background-position: -0px -0px;
+    }
+    100% {
+        background-position: -1408px -0px;
+    }
+}
+@keyframes loadingAnimation {
+    0% {
+        background-position: -0px -0px;
+    }
+    100% {
+        background-position: -1408px -0px;
+    }
+}
+
+/*封面*/
+.vodCoverContainer {
+    display: none;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.vodCoverContainer img {
+    position: absolute;
+}
+
+/*Alert*/
+.vodAlertPanel {
+    font-family:Arial;
+    z-index: 190;
+    position: absolute;
+    top: -9990px;
+    left: -9990px;
+    width: 200px;
+    height: 46px;
+    background-color:rgba(0,0,0,.7);
+    cursor: default;
+    padding-left: 4px;
+}
+.vodAlertPanel div {
+    font-size: 12px;
+    color:#f0f0f0;
+    height: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*Focus*/
+.vodFocusPanel {
+    font-family: Arial;
+    z-index: 210;
+    position: absolute;
+    top: -9990px;
+    left: -9990px;
+    width: 190px;
+    background-color: rgba(36, 31, 27, 0.7);
+    cursor: default;
+    color: #a7a7a7;
+}
+.vodFocusPanel div {
+    font-size: 14px;
+}
+
+/*播放速度面板*/
+.vodRatePanel {
+    font-family: Arial;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 220;
+    position: absolute;
+    top: -9990px;
+    left: -9990px;
+    width: 190px;
+    height: 90px;
+    background-color: rgba(36, 31, 27, 0.7);
+    cursor: default;
+    color: #dcdcdc;
+}
+.vodRatePanel div {
+    line-height: 30px;
+}
+.vodRatePanel input {
+    margin-left: 6px;
+}
+.vodRatePanelTitle {
+    text-align: left;
+    padding-left: 6px;
+}
+.vodRatePanelClose {
+    width: 50px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
