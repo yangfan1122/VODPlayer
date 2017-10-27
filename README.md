@@ -31,15 +31,12 @@ VODPlayer is a open source project. I'm glad of any sugestions and bug report.
 
 ## Acknowledgments
 
-[flv.js][flv-js]
-[hls.js][hls-js]
-[three.js][three-js]
+[flv.js][flv-js] 
+[hls.js][hls-js] 
+[three.js][three-js] 
 
 
 [flv-js]: https://github.com/Bilibili/flv.js
 [hls-js]: https://github.com/video-dev/hls.js
 [three-js]: https://github.com/mrdoob/three.js
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
