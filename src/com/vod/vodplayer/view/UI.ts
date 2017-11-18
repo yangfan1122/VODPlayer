@@ -197,6 +197,8 @@ export class UI {
         if(id!==undefined) {
             v.id = this.dataIdHeader+id;
         }
+        v.setAttribute("webkit-playsinline", "true");
+        v.setAttribute("playsinline", "true");
         return v;
     }
 
