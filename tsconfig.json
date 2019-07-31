@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "amd",
+    "declaration": true,
+    "outDir": "./dist",
+    "outFile": "./dist/VODPlayer.js",
+    "strict": false,
+    "removeComments": true,
+    "strictPropertyInitialization": false
+  }
+}

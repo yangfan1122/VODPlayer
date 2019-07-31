@@ -72,7 +72,7 @@ export class D {
         //    this.consoleDiv = U.e("vodConsole");
         //}
 
-        this.consoleDiv = document.getElementById("vodConsole");
+        this.consoleDiv = document.getElementById("vodConsole") as HTMLElement;
     }
 
     private static logTime(): string {

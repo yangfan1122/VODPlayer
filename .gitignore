@@ -1,4 +1,3 @@
-.actionScriptProperties
 .project
 .settings/
 bin-debug/
@@ -8,6 +7,7 @@ NTESPlayer.iml
 docs/
 out/
 bin/
+dist/
 node_modules/
 html-template/test/
 html-template/*.mp4

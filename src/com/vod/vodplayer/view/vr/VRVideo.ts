@@ -20,8 +20,8 @@ export class VRVideo {
     private sphere: any;
     private mesh: any;
     private texture: any;
-    private requestAnimationId: number;
-    private thisTime: number;
+    private requestAnimationId: number = -1;
+    private thisTime: number = -1;
     private controls: any;
 
     public constructor(m: Model, c: Controller, v: HTMLVideoElement) {
@@ -115,11 +115,12 @@ export class VRVideo {
      * @param event
      */
     private onMouseWheel(event: WheelEvent): void {
-        if(event.wheelDelta < 0 && this.controls.spherical.radius > Math.floor(G.stageWidth[this.model.idHeader].stageWidth/2)) {
-            this.controls.enableZoom = false;
-        } else if(event.wheelDelta > 0) {
-            this.controls.enableZoom = true;
-        }
+        // if(event.wheelDelta < 0 && this.controls.spherical.radius > Math.floor(G.stageWidth[this.model.idHeader].stageWidth/2)) {
+        //     this.controls.enableZoom = false;
+        // } else if(event.wheelDelta > 0) {
+        //     this.controls.enableZoom = true;
+        // }
+        console.warn('TODO: WheelEvent.wheelDelta')
     }
 
     private animate(): void {

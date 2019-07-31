@@ -40,7 +40,8 @@ export class PlaybackRatePanel {
 
         this.close.addEventListener("click", this.closeHandler.bind(this));
 
-        const tempArr: NodeList = this.panel.getElementsByTagName("input");
+        // const tempArr: NodeList = this.panel.getElementsByTagName("input");
+        const tempArr: HTMLCollection = this.panel.getElementsByTagName("input");
         let tempRadio: HTMLInputElement;
         for(let j: number=0; j<tempArr.length; j++) {
             tempRadio = (tempArr[j] as HTMLInputElement);

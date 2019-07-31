@@ -82,7 +82,7 @@ export class FullScreen {
             element.msExitFullscreen();
         } else if (element.mozCancelFullScreen) {
             element.mozCancelFullScreen();
-        } else if (document.webkitExitFullscreen) {
+        } else if (element.webkitExitFullscreen) {
             element.webkitExitFullscreen();
         }
     }
