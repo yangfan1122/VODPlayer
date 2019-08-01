@@ -2,9 +2,9 @@
   "name": "vodplayer",
   "version": "1.0.0",
   "description": "Video player",
-  "main": "VODPlayer.ts",
+  "main": "./dist/VODPlayer.js",
   "scripts": {
-    "clean": "rimraf ./dist/VODPlayer.d.ts && rimraf ./dist/VODPlayer.js",
+    "clean": "rimraf ./dist/*",
     "prebuild": "npm run clean",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

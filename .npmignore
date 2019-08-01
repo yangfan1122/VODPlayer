@@ -1,0 +1,16 @@
+/.git/
+/.vscode/
+/docs/
+/node_modules/
+/.idea/
+.gitignore
+.npmignore
+tslint.json
+tsconfig.json
+*.log
+package-lock.json
+
+/src/
+/test/
+/html-template/
+/libs/
