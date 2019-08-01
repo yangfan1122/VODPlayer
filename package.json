@@ -1,6 +1,6 @@
 {
   "name": "vodplayer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Video player",
   "main": "./dist/VODPlayer.js",
   "scripts": {
@@ -14,5 +14,6 @@
   "dependencies": {
     "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
-  }
+  },
+  "homepage": "https://github.com/yangfan1122/VODPlayer#readme"
 }
