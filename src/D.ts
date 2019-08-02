@@ -23,9 +23,6 @@ export class D {
             } else {
                 (this.consoleDiv as HTMLElement).innerHTML += content;
             }
-        } else if(!this.consoleDiv) {
-            this.getConsole();
-            this.d(params, replace);
         }
     }
 

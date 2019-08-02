@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES6",
-//    "module": "commonjs",
     "declaration": true,
     "outDir": "./dist",
-//    "outFile": "./dist/VODPlayer.js",
     "strict": false,
     "removeComments": true,
     "strictPropertyInitialization": false
-  }
+  },
+  "include": [
+    "./src/**/*",
+    "./*.d.ts"
+  ]
 }

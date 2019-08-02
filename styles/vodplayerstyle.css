@@ -78,7 +78,8 @@
     width: 0px;
     z-index: 100;
     top: 1px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) repeat-x -85px -148px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) repeat-x -85px -148px;*/
+    background: url(assets.png) repeat-x -85px -148px;
 }
 .vodSliderShow {
     height: 16px;
@@ -130,7 +131,8 @@
     z-index: 7;
     -webkit-box-sizing: border-box;
     /*padding: 0 10px;*/
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/bg.png) repeat-x -0px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/bg.png) repeat-x -0px -0px;*/
+    background: url(bg.png) repeat-x -0px -0px;
 }
 .vodCtrlContainer:focus{
     outline:none;
@@ -147,7 +149,8 @@
 .vodPlayBtn div {
     height: 15px;
     width: 15px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -15px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -15px -90px;*/
+    background: url(assets.png) no-repeat -15px -90px;
     cursor: pointer;
     top: 50%;
     left: 50%;
@@ -157,7 +160,8 @@
     -o-transform: translateX(-50%) translateY(-50%);
 }
 .vodPlayBtn:hover div {
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -0px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -0px -90px;*/
+    background: url(assets.png) no-repeat -0px -90px;
 }
 .vodPauseBtn {
     width: 56px;
@@ -167,7 +171,8 @@
 .vodPauseBtn div {
     height: 15px;
     width: 12px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -30px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -30px -90px;*/
+    background: url(assets.png) no-repeat -30px -90px;
     cursor: pointer;
     top: 50%;
     left: 50%;
@@ -177,7 +182,8 @@
     -o-transform: translateX(-50%) translateY(-50%);
 }
 .vodPauseBtn:hover div {
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -42px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -42px -90px;*/
+    background: url(assets.png) no-repeat -42px -90px;
 }
 
 /*音量+时间;*/
@@ -186,7 +192,8 @@
     cursor: pointer;
     width: 18px;
     height: 18px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -201px -130px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -201px -130px;*/
+    background: url(assets.png) no-repeat -201px -130px;
     top: 50%;
     left: 26px;
     -webkit-transform: translateX(-11px) translateY(-50%);
@@ -199,7 +206,8 @@
     cursor: pointer;
     width: 12px;
     height: 15px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -189px -130px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -189px -130px;*/
+    background: url(assets.png) no-repeat -189px -130px;
     top: 50%;
     left: 26px;
     -webkit-transform: translateX(-11px) translateY(-50%);
@@ -212,7 +220,8 @@
     cursor: pointer;
     width: 16px;
     height: 15px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -219px -130px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -219px -130px;*/
+    background: url(assets.png) no-repeat -219px -130px;
     top: 50%;
     left: 26px;
     -webkit-transform: translateX(-11px) translateY(-50%);
@@ -334,7 +343,8 @@
     cursor: pointer;
     width: 18px;
     height: 18px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -82px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -82px -90px;*/
+    background: url(assets.png) no-repeat -82px -90px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -343,7 +353,8 @@
     -o-transform: translateX(-50%) translateY(-50%);
 }
 .vodSetting:hover div {
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -64px -90px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -64px -90px;*/
+    background: url(assets.png) no-repeat -64px -90px;
 }
 
 .vodQualityDisabled {
@@ -396,7 +407,8 @@
     cursor: pointer;
     width: 20px;
     height: 16px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -237px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -237px -0px;*/
+    background: url(assets.png) no-repeat -237px -0px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -405,13 +417,15 @@
     -o-transform: translateX(-50%) translateY(-50%);
 }
 .vodFullBtn:hover {
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -218px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -218px -0px;*/
+    background: url(assets.png) no-repeat -218px -0px;
 }
 .vodExitFullBtn {
     cursor: pointer;
     width: 19px;
     height: 16px;
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -199px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -199px -0px;*/
+    background: url(assets.png) no-repeat -199px -0px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -420,7 +434,8 @@
     -o-transform: translateX(-50%) translateY(-50%);
 }
 .vodExitFullBtn:hover {
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -180px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/assets.png) no-repeat -180px -0px;*/
+    background: url(assets.png) no-repeat -180px -0px;
 }
 
 
@@ -629,7 +644,8 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     /* pic size : 1408*64 */
-    background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/loadingsprite.png) no-repeat -0px -0px;
+    /*background: url(//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/loadingsprite.png) no-repeat -0px -0px;*/
+    background: url(loadingsprite.png) no-repeat -0px -0px;
     -moz-animation: loadingAnimation 1s steps(22) infinite;
     -webkit-animation: loadingAnimation 1s steps(22) infinite;
     animation: loadingAnimation 1s steps(22) infinite;

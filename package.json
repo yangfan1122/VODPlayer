@@ -1,8 +1,9 @@
 {
   "name": "vodplayer",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Video player",
   "main": "./dist/VODPlayer.js",
+  "style": "./styles/vodplayerstyle.css",
   "scripts": {
     "clean": "rimraf ./dist/*",
     "prebuild": "npm run clean",
@@ -15,5 +16,14 @@
     "rimraf": "^2.6.3",
     "typescript": "^3.5.3"
   },
-  "homepage": "https://github.com/yangfan1122/VODPlayer#readme"
+  "homepage": "https://github.com/yangfan1122/VODPlayer#readme",
+  "files": [
+    "libs",
+    "dist",
+    "styles"
+  ],
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "style-loader": "^0.23.1"
+  }
 }

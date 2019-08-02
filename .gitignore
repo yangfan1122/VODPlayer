@@ -12,3 +12,4 @@ node_modules/
 html-template/test/
 html-template/*.mp4
 html-template/vodplayerstyle.min.css
+examples/vue-test/node_modules/
