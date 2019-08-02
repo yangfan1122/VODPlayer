@@ -11,12 +11,10 @@ export default {
   mounted() {
     new VODPlayer(this.$refs.player, {
       autoplay:false,
-      videoSource: 'http://www.w3school.com.cn/i/movie.mp4'
+      videoSource: '//www.w3school.com.cn/i/movie.mp4'
     })
   }
-
 }
-
 </script>
 
 <style scoped>

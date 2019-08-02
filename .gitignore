@@ -1,15 +1,9 @@
-.project
-.settings/
-bin-debug/
-bin-release/
 .idea/
-NTESPlayer.iml
 docs/
-out/
-bin/
 dist/
 node_modules/
 html-template/test/
 html-template/*.mp4
 html-template/vodplayerstyle.min.css
 examples/vue-test/node_modules/
+examples/react-test/node_modules/
