@@ -1,4 +1,4 @@
-# VOD Player
+# VODPlayer
 
 VODPlayer是一款基于HTML5及其他第三方库的Web视频播放器。  
 

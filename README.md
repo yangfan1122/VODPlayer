@@ -1,4 +1,4 @@
-# VOD Player
+# VODPlayer
 
 VODPlayer is a Web Video player which built from HTML5 and other third party libraries.  
 
@@ -51,7 +51,7 @@ export default {
 
 #### [React](https://github.com/yangfan1122/VODPlayer/tree/master/examples/react-test)
 App.js
-```react
+```jsx harmony
 import React from 'react';
 import { VODPlayer } from "vodplayer";
 
