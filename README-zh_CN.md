@@ -1,23 +1,23 @@
 # VOD Player
 
-VODPlayer is a Web Video player which built from HTML5 and other third party libraries.  
+VODPlayer是一款基于HTML5及其他第三方库的Web视频播放器。  
 
-Formats of video supported are mp4, flv, m3u8 and VR Video.
+支持mp4、flv、m3u8及VR视频。  
 
-English | [简体中文](./README-zh_CN.md)  
+[English](./README.md)  | 简体中文  
 
-## Install
+## 安装
 
 ```
 npm install vodplayer
 ```
 
-## Params
+## 详细参数
 ```vue
 TODO
 ```
 
-## Usage
+## 用法
 
 #### [Vue.js](https://github.com/yangfan1122/VODPlayer/tree/master/examples/vue-test)
   
@@ -81,11 +81,11 @@ function App() {
 export default App;
 ```
 
-## Contributing
+## 贡献
 
-VODPlayer is a open source project. I'm glad of any sugestions and bug report.
+VODPlayer是一个开源项目。欢迎大家提出意见及报告问题。
 
-## Acknowledgments
+## 感谢以下第三方库
 
 [flv.js][flv-js]  
 [hls.js][hls-js]  
