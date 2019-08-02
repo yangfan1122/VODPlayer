@@ -23,7 +23,7 @@ export class IPChecker extends E{
             if(Utils.isLocal()) {
                 this.loadJSON.load("isFromMainland", E.IP_LOADED, E.IP_FAILED);
             } else {
-                this.loadJSON.load("//ipservice.163.com/isFromMainland", E.IP_LOADED, E.IP_FAILED);
+                this.loadJSON.load("isFromMainland", E.IP_LOADED, E.IP_FAILED);
             }
         } else {
             this.dispatch(E.IP_ALLOWED);

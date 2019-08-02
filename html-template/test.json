@@ -3,14 +3,14 @@
     "vr": "1",
     "flvUrl": {
       "flv": [
-        "http://flv4.bn.netease.com/videolib3/1608/11/eYIaf6135/SD/eYIaf6135-mobile.mp4",
-        "http://flv.bn.netease.com/videolib3/1608/11/eYIaf6135/SD/eYIaf6135-mobile.mp4"
+        "eYIaf6135-mobile.mp4",
+        "eYIaf6135-mobile.mp4"
       ]
     },
     "hdUrl": {
       "flv": [
-        "http://flv4.bn.netease.com/videolib3/1608/11/eYIaf6135/HD/eYIaf6135-mobile.mp4",
-        "http://flv.bn.netease.com/videolib3/1608/11/eYIaf6135/HD/eYIaf6135-mobile.mp4"
+        "eYIaf6135-mobile.mp4",
+        "eYIaf6135-mobile.mp4"
       ]
     },
     "title": "%E5%8F%B6%E8%AF%97%E6%96%87%E8%87%AA%E6%9B%9D%E5%B7%B2%E5%85%81%E8%AE%B8%E6%81%8B%E7%88%B1%20%E5%AE%81%E6%B3%BD%E6%B6%9B%E5%A4%AA%E5%B8%85hold%E4%B8%8D%E4%BD%8F",
@@ -18,6 +18,6 @@
     "tags": "%E5%86%A0%E5%86%9B%E4%B9%8B%E5%AE%B6%20%E5%8F%B6%E8%AF%97%E6%96%87%20%E6%B8%B8%E6%B3%B3%20%E5%A5%A5%E8%BF%90%E4%BC%9A",
     "pltype": "7",
     "stree": "sect_0005VBOEOMA91VBSI9KG10",
-    "pageUrl": "http://2016.163.com/video/2016/8/0/L/VBT9HNV0L.html"
+    "pageUrl": ""
   }
 }
