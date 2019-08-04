@@ -6,7 +6,7 @@ import {Model} from "../../model/Model";
 export class Stat {
     // private static stat: Stat = new Stat();
     private img: HTMLImageElement;
-    private statUrl: string = "http://yourstatdomain/htdata/";
+    private statUrl: string = "//yourstatdomain";
     private uuid: string;
     private channel: string = "vodplayer";
     private model:Model;
