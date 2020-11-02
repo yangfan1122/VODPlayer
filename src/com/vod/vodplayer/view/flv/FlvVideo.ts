@@ -39,17 +39,17 @@ export class FlvVideo {
         this.loading = this.model.u.e("vodLoading");
         let self: FlvVideo = this;
         let flvPath: string = "";
-        if(Utils.isLocal()) {
-            flvPath = "../../../../../../libs/flv.min";
+        if(G.params[this.model.idHeader].flvJSPath) {
+            flvPath = G.params[this.model.idHeader].flvJSPath;
         } else {
-            flvPath = "//cdn.rawgit.com/yangfan1122/docs/gh-pages/assets/flv.min.js";
+            D.w('flv.js path is empty')
         }
         let loadModel: any;
         try {
             loadModel = bowlder.run;
         } catch (error) {
-            D.w("no bowlder.run");
-            loadModel = require;
+            const w: any = window
+            loadModel = require || w.require;
         }
 
         loadModel([flvPath], (flv: any) => {

@@ -36,19 +36,19 @@ export class HLSVideo {
         this.loading = this.model.u.e("vodLoading");
         let self: HLSVideo = this;
         let HLSPath: string = "";
-        if(Utils.isLocal()) {
-            HLSPath = "../../../../../../libs/hls.min";
+        if(G.params[this.model.idHeader].hlsJSPath) {
+            HLSPath = G.params[this.model.idHeader].hlsJSPath;
         } else {
-            HLSPath = "//cdn.rawgit.com/yangfan1122/docs/gh-pages/assets/hls.min.js";
+            D.w('hls.js path is empty')
         }
         let loadModel: any;
         try {
             loadModel = bowlder.run;
         } catch (error) {
-            D.w("no bowlder.run");
-            loadModel = require;
+            const w: any = window
+            loadModel = require || w.require;
         }
-
+        console.log('HLSPath: ', HLSPath)
         loadModel([HLSPath], (HLS: any) => {
             D.d("HLS Lib loaded");
             self.HLSStatic = HLS;

@@ -33,6 +33,10 @@ export class Params {
         if(Number(G.params[idheader].starttime) > Number(G.params[idheader].endtime)) {
             G.params[idheader].endtime = Infinity;
         }
+        G.params[idheader].threeJSPath = params.threeJSPath?params.threeJSPath:"";
+        G.params[idheader].flvJSPath = params.flvJSPath?params.flvJSPath:"";
+        G.params[idheader].hlsJSPath = params.hlsJSPath?params.hlsJSPath:"";
+        G.params[idheader].requireJSPath = params.requireJSPath?params.requireJSPath:"";
     }
 
     private static isNumber(num: string): string {

@@ -57,7 +57,27 @@ export class View {
         this.container = co;
 
         this.init();
-        this.controller.init();
+
+        //TODO: it's unnecessary when you just want to play mp4
+        this.loadRequire()
+    }
+
+    /**
+     * load require.js
+     */
+    private loadRequire (): void {
+        const s: HTMLScriptElement = document.createElement('script')
+        s.src = G.params[this.model.idHeader].requireJSPath
+        document.head.appendChild(s)
+
+        const t: number = setInterval(() => {
+            const w: any = window
+            if (w.require) {
+                clearInterval(t)
+                D.d('load require.js success.')
+                this.controller.init();
+            }
+        }, 100)
     }
 
     private init(): void {

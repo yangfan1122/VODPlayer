@@ -49,17 +49,17 @@ export class VRVideo {
 
         let self: VRVideo = this;
         let threePath: string = "";
-        if(Utils.isLocal()) {
-            threePath = "../../../../../../libs/three";
+        if(G.params[this.model.idHeader].threeJSPath) {
+            threePath = G.params[this.model.idHeader].threeJSPath
         } else {
-            threePath = "//cdn.rawgit.com/yangfan1122/docs/gh-pages/assets/three.min.js";
+            D.w('three.js path is empty')
         }
         let loadModel: any;
         try {
             loadModel = bowlder.run;
         } catch (error) {
-            D.w("no bowlder.run");
-            loadModel = require;
+            const w: any = window
+            loadModel = require || w.require;
         }
         loadModel([threePath], (THREE: any) => {
             this.model.u.display(self.video, "none");
