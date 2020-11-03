@@ -54,13 +54,8 @@ export class VRVideo {
         } else {
             D.w('three.js path is empty')
         }
-        let loadModel: any;
-        try {
-            loadModel = bowlder.run;
-        } catch (error) {
-            const w: any = window
-            loadModel = require || w.require;
-        }
+        const w: any = window
+        let loadModel: any = require || w.require
         loadModel([threePath], (THREE: any) => {
             this.model.u.display(self.video, "none");
             self.thisTime = (new Date()).getTime();
@@ -103,7 +98,6 @@ export class VRVideo {
 
             self.controls = new THREE.OrbitControls(self.camera, self.renderer.domElement);
         }, (error: any) => {
-            D.e(error);
             self.controller.toggle(false);
             self.model.issue = 4;
         });

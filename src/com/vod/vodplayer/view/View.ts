@@ -66,12 +66,31 @@ export class View {
      * load require.js
      */
     private loadRequire (): void {
+        let r: string = ''
+        try {
+            r = G.params[this.model.idHeader].requireJSPath
+        } catch (e) {
+            D.w(e)
+        }
+
+        if (!r) {
+            this.controller.init()
+            return
+        }
+
         const s: HTMLScriptElement = document.createElement('script')
         s.src = G.params[this.model.idHeader].requireJSPath
         document.head.appendChild(s)
 
+        let sum: number = 0
+        let w: any
         const t: number = setInterval(() => {
-            const w: any = window
+            if (sum++ >= 30) {
+                clearInterval(t)
+                console.warn("It's better to check your value of requireJSPath.")
+                return
+            }
+            w = window
             if (w.require) {
                 clearInterval(t)
                 D.d('load require.js success.')

@@ -67,7 +67,7 @@ export class Tips {
             content = "hls\u5e93\u52a0\u8f7d\u5931\u8d25";
         } else if(code === 9) {
             //flv库加载失败
-            content = "hls\u5e93\u52a0\u8f7d\u5931\u8d25";
+            content = "flv\u5e93\u52a0\u8f7d\u5931\u8d25";
         } else if(code === 10) {
             //浏览器不支持，请使用Google Chrome
             content = "\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\uff0c\u8bf7\u4f7f\u7528Google Chrome";

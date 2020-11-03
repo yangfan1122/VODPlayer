@@ -13,9 +13,24 @@ npm install vodplayer
 ```
 
 ## Params
-```vue
-TODO
-```
+
+##### Required
+- videoSource - The URL of Video file(mp4, flv, m3u8).
+##### Optional
+- autoplay - true: Playback automatically. Default is false.
+- loop - 1: Continuous loop of video. Default is 0.
+- muted - 1: mute. Default is 0.
+- control - 0: Hide the control panel. Default is 1.
+- coverpic - The URL of cover picutre.
+- focusJson - Highlights of the video, e.g. '[{"cutImage":"","title":"highlight1","startPoint":"121","endPoint":"185","id":52},{"cutImage":"","title":"highlight2","startPoint":"221","endPoint":"285","id":533}]'
+- starttime - Playback at this time. (autoplay must be false)
+- endtime - Stop video at this time. (autoplay must be false)
+- vr - 1: Panoramic Video. Default is 0.
+- threeJSPath - The URL of [three.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/three.js). If vr is 1, required.
+- flvJSPath - The URL of [flv.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/flv.min.js). If videoSource is .flv, required.
+- hlsJSPath - The URL of [hls.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/hls.min.js). If videoSource is .m3u8, required.
+- requireJSPath - The URL of [require.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/html-template/require.js). If needing to load three.js/flv.js/hls.js, required.
+
 
 ## Usage
 
@@ -83,7 +98,7 @@ export default App;
 
 ## Contributing
 
-VODPlayer is a open source project. I'm glad of any sugestions and bug report.
+VODPlayer is a open source project. I'm glad of any sugestions and [bug report](https://github.com/yangfan1122/VODPlayer/issues).
 
 ## Acknowledgments
 

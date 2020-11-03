@@ -41,14 +41,8 @@ export class HLSVideo {
         } else {
             D.w('hls.js path is empty')
         }
-        let loadModel: any;
-        try {
-            loadModel = bowlder.run;
-        } catch (error) {
-            const w: any = window
-            loadModel = require || w.require;
-        }
-        console.log('HLSPath: ', HLSPath)
+        const w: any = window
+        let loadModel: any = require || w.require
         loadModel([HLSPath], (HLS: any) => {
             D.d("HLS Lib loaded");
             self.HLSStatic = HLS;
@@ -58,7 +52,6 @@ export class HLSVideo {
                 self.loadHLS();
             }
         }, (error: any) => {
-            D.e(error);
             self.controller.toggle(false);
             self.model.issue = 8;
         });

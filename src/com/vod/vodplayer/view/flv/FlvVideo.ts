@@ -44,14 +44,8 @@ export class FlvVideo {
         } else {
             D.w('flv.js path is empty')
         }
-        let loadModel: any;
-        try {
-            loadModel = bowlder.run;
-        } catch (error) {
-            const w: any = window
-            loadModel = require || w.require;
-        }
-
+        const w: any = window
+        let loadModel: any = require || w.require
         loadModel([flvPath], (flv: any) => {
             D.d("flv.js Lib loaded");
             self.flvStatic = flv;
@@ -60,7 +54,6 @@ export class FlvVideo {
                 self.loadFlv();
             }
         }, (error: any) => {
-            D.e(error);
             self.controller.toggle(false);
             self.model.issue = 9;
         });
