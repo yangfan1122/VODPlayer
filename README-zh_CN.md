@@ -15,21 +15,27 @@ npm install vodplayer
 ## 详细参数
 
 ##### 必填
-- videoSource - 视频地址(mp4, flv, m3u8).
+参数 | 描述 | 默认值
+---- | ----------- | -------
+`videoSource` | 视频地址(mp4, flv, m3u8)
+
 ##### 可选
-- autoplay - true: 自动播放. 默认为false.
-- loop - 1: 循环播放. 默认为0.
-- muted - 1: 静音. 默认为0.
-- control - 0: 隐藏控制栏. 默认为1.
-- coverpic - 视频封面地址.
-- focusJson - 看点数据, 例如： '[{"cutImage":"","title":"highlight1","startPoint":"121","endPoint":"185","id":52},{"cutImage":"","title":"highlight2","startPoint":"221","endPoint":"285","id":533}]'
-- starttime - 开始播放时刻. (autoplay必须为false)
-- endtime - 播放停止时刻. (autoplay必须为false)
-- vr - 1: 全景视频. 默认为0.
-- threeJSPath - [three.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/three.js)地址. 如vr为1, 必填.
-- flvJSPath - [flv.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/flv.min.js)地址. 如videoSource为.flv格式, 必填.
-- hlsJSPath - [hls.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/hls.min.js)地址. 如videoSource为.m3u8格式, 必填.
-- requireJSPath - [require.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/html-template/require.js)地址. 如需要加载three.js/flv.js/hls.js, 必填.
+参数 | 描述 | 默认值
+---- | ----------- | -------
+`autoplay` | 自动播放 | false
+`loop` | 循环播放 | 0
+`muted` | 静音 | 0
+`control` | 显示控制栏 | 1
+`coverpic` | 视频封面地址 
+`focusJson` | 视频看点数据, 例: '[{"cutImage":"","title":"highlight1","startPoint":"121","endPoint":"185","id":52},{"cutImage":"","title":"highlight2","startPoint":"221","endPoint":"285","id":533}]' 
+`starttime` | 开始播放时刻 (autoplay 必须是 false)
+`endtime` | 播放停止时刻. (autoplay 必须是 false)
+`vr` | 全景视频 | 0
+`threeJSPath` | [three.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/three.js). 如vr为1, 必填.
+`flvJSPath` | [flv.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/flv.min.js). 如videoSource为.flv格式, 必填.
+`hlsJSPath` | [hls.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/libs/hls.min.js). 如videoSource为.m3u8格式, 必填.
+`requireJSPath` | [require.js](https://raw.githubusercontent.com/yangfan1122/VODPlayer/master/html-template/require.js). 如需要加载three.js/flv.js/hls.js, 必填.
+
 
 ## 用法
 
