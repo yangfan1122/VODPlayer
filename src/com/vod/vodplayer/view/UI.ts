@@ -127,13 +127,15 @@ export class UI {
         const vodHDItem:HTMLDivElement = this.div("", "vodHDItem");
         // const vodHDItemImg:HTMLImageElement = this.img("//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/tick.png");
         const vodHDItemImg:HTMLImageElement = this.img("../../../../../style/tick.png");
-        const vodHDItemSpan:HTMLSpanElement = this.span("\u9ad8\u6e05");//高清
+        // const vodHDItemSpan:HTMLSpanElement = this.span("\u9ad8\u6e05");//高清
+        const vodHDItemSpan:HTMLSpanElement = this.span("HD");//高清
         vodHDItem.appendChild(vodHDItemImg);
         vodHDItem.appendChild(vodHDItemSpan);
         const vodSDItem:HTMLDivElement = this.div("", "vodSDItem");
         // const vodSDItemImg:HTMLImageElement = this.img("//raw.githubusercontent.com/yangfan1122/docs/gh-pages/assets/tick.png");
         const vodSDItemImg:HTMLImageElement = this.img("../../../../../style/tick.png");
-        const vodSDItemSpan:HTMLSpanElement = this.span("\u6d41\u7545");//流畅
+        // const vodSDItemSpan:HTMLSpanElement = this.span("\u6d41\u7545");//流畅
+        const vodSDItemSpan:HTMLSpanElement = this.span("SD");//流畅
         vodSDItem.appendChild(vodSDItemImg);
         vodSDItem.appendChild(vodSDItemSpan);
         vodQualityItems.appendChild(vodHDItem);

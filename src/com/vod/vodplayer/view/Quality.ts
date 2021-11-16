@@ -133,9 +133,11 @@ export class Quality {
 
     private btnLabel(q: string): void {
         if(q === "sd") {
-            this.btn.innerHTML = "\u6d41\u7545";//流畅
+            // this.btn.innerHTML = "\u6d41\u7545";//流畅
+            this.btn.innerHTML = "SD";//流畅
         } else if(q === "hd") {
-            this.btn.innerHTML = "\u9ad8\u6e05";//高清
+            // this.btn.innerHTML = "\u9ad8\u6e05";//高清
+            this.btn.innerHTML = "HD";//高清
         }
     }
 

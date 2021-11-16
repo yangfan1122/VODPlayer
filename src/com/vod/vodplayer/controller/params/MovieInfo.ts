@@ -75,8 +75,8 @@ export class MovieInfo {
             }
         }
 
-        D.d("流畅: "+sdArr);
-        D.d("高清: "+hdArr);
+        D.d("SD: "+sdArr);
+        D.d("HD: "+hdArr);
 
         //vr，页面参数优先级高于视频信息xml
         if(G.params[idHeader].vr === "1") {
