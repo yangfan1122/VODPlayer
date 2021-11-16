@@ -97,13 +97,13 @@ export class UI {
         const vodMenuItem1A:HTMLAnchorElement = this.anchor("#", "View log");//查看日志
         vodMenuItem1.appendChild(vodMenuItem1A);
         const vodMenuItem2:HTMLDivElement = this.div("");
-        const vodMenuItem2A:HTMLAnchorElement = this.anchor("#", "vod", "_blank");
+        const vodMenuItem2A:HTMLAnchorElement = this.anchor("https://github.com/yangfan1122/VODPlayer", "VODPlayer", "_blank");
         vodMenuItem2.appendChild(vodMenuItem2A);
         const vodMenuItem3:HTMLDivElement = this.div("");
         vodMenuItem3.innerHTML = G.version;
         vodMenu.appendChild(vodMenuItem1);
         vodMenu.appendChild(vodMenuItem2);
-        vodMenu.appendChild(vodMenuItem3);
+        // vodMenu.appendChild(vodMenuItem3);
 
 
         //设置

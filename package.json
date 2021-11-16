@@ -1,6 +1,6 @@
 {
   "name": "vodplayer",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Video player",
   "main": "./dist/VODPlayer.js",
   "style": "./styles/vodplayerstyle.css",
