@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>VODPlayer html template</title>
+  <meta charset="UTF-8">
+  <title>VODPlayer html template</title>
 
-    <script data-main="dist/VODPlayer.js" src="require.js"></script>
-    <link rel="stylesheet" type="text/css" href="../styles/vodplayerstyle.css"/>
-    <style>
-        body {
-            background-color: #333333;
-        }
-        td {
-            color: #bababa;
-        }
-        .outer {
-            /*width:960px;*/
-            /*height:520px;*/
-            width: 640px;
-            height: 360px;
-            background-color: black;
-        }
-        #vodConsole {
-            font-family: Arial;
-            color: #bababa;
-            margin: 10px auto;
-        }
-    </style>
+  <script data-main="dist/VODPlayer.js" src="require.js"></script>
+  <link rel="stylesheet" type="text/css" href="../styles/vodplayerstyle.css"/>
+  <style>
+    body {
+      background-color: #333333;
+    }
+
+    td {
+      color: #bababa;
+    }
+
+    .outer {
+      /*width:960px;*/
+      /*height:520px;*/
+      width: 640px;
+      height: 360px;
+      background-color: black;
+    }
+
+    #vodConsole {
+      font-family: Arial;
+      color: #bababa;
+      margin: 10px auto;
+    }
+  </style>
 </head>
 <body>
 <div class="outer" id="outer">
-    <div id="vodcontainer"></div>
- <script>
+  <div id="vodcontainer"></div>
+  <script>
     require(["VODPlayer"], function (VODPlayer) {
-        //参数值都是字符
-        VODPlayer.VODPlayer(document.getElementById("vodcontainer"), {
-            pltype:"8",
-            topicid:"0085",
-            vid:"",
-            sid:"V8GIAB8I2",
-            coverpic:"",
-            autoplay:false,
-            //                            starttime:62,//autoplay为false时有效
-            //                            endtime:75,//autoplay为false时有效，大于starttime时赋值Infinity
-            iplimit:0,
-            videoadv:"",
-            loop:0,
-            muted:0,
-            control:1,
-            check:1,//1:审核平台版本
-            playbackrate:1,//check为1时有效，1～3.
-            vr:0,
-            stat:0,//统计信息开关
-            focusJson: '[{"cutImage":"","title":"测试看点","startPoint":"121","endPoint":"185","id":52},{"cutImage":"","title":"测试看点测试看点测试看点测试看点测试看点测试看点测试看点测试看点测试看点","startPoint":"221","endPoint":"285","id":533},{"cutImage":"","title":"测试看点2","startPoint":"305","endPoint":"366","id":53},{"cutImage":"","title":"内容丰富、专业、实用、互动性强","startPoint":"8421","endPoint":"9581","id":71}]',
-            videoSource: '//www.w3school.com.cn/i/movie.mp4'
-        });
+      //参数值都是字符
+      VODPlayer.VODPlayer(document.getElementById("vodcontainer"), {
+        pltype: "8",
+        topicid: "0085",
+        vid: "",
+        sid: "V8GIAB8I2",
+        coverpic: "",
+        autoplay: false,
+        // starttime:62,//autoplay为false时有效
+        // endtime:75,//autoplay为false时有效，大于starttime时赋值Infinity
+        iplimit: 0,
+        videoadv: "",
+        loop: 0,
+        muted: 0,
+        control: 1,
+        check: 1,//1:审核平台版本
+        playbackrate: 1,//check为1时有效，1～3.
+        vr: 0,
+        stat: 0,//统计信息开关
+        focusJson: '[{"cutImage":"","title":"测试看点","startPoint":"121","endPoint":"185","id":52},{"cutImage":"","title":"测试看点测试看点测试看点测试看点测试看点测试看点测试看点测试看点测试看点","startPoint":"221","endPoint":"285","id":533},{"cutImage":"","title":"测试看点2","startPoint":"305","endPoint":"366","id":53},{"cutImage":"","title":"内容丰富、专业、实用、互动性强","startPoint":"8421","endPoint":"9581","id":71}]',
+        videoSource: '//www.w3school.com.cn/i/movie.mp4'
+      });
     });
-</script>
+  </script>
 
 
 </div>
 <script>
-    function clearconsole() {
-        document.getElementById("vodConsole").innerHTML = "";
-    }
+  function clearconsole() {
+    document.getElementById("vodConsole").innerHTML = "";
+  }
 </script>
 <br>
 <button type="button" onclick="clearconsole()">Clear</button>
