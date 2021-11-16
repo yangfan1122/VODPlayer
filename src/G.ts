@@ -3,7 +3,7 @@
  * 留意需要重复使用的静态属性
  */
 export class G {
-    public static version: string = "VODPlayer 0.8.0.24";
+    public static version: string = "VODPlayer 0.8.0.25";
     public static channel: string = "vodplayer";
 
     public static stageWidth:any = {};

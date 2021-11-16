@@ -24,7 +24,8 @@ export class CheckPanelBody {
 
         //播放速度
         const defaultLabelElement:HTMLDivElement = this.ui.div("", "vodCheckSpeedMenu");
-        defaultLabelElement.innerHTML = "1\u500d";//1倍
+        // defaultLabelElement.innerHTML = "1\u500d";//1倍
+        defaultLabelElement.innerHTML = "1 ";//1倍
         checkContainer.appendChild(defaultLabelElement);
 
         //播放速度按钮
@@ -40,8 +41,9 @@ export class CheckPanelBody {
      * @param event
      */
     private rateHandler(event?:Event):void {
-        const content:string = this.model.playbackRate+"\u500d";
-        this.menu.innerHTML = content;
+        // const content:string = this.model.playbackRate+"\u500d";
+        const content:number = this.model.playbackRate;
+        this.menu.innerHTML = content.toString();
     }
 
     /**
@@ -50,11 +52,11 @@ export class CheckPanelBody {
      */
     private clickHandler(event?:MouseEvent):void {
         const content:string = this.menu.innerHTML;
-        if(content === "1\u500d") {
+        if(content === "1 ") {
             this.controller.playbackRate(2);
-        } else if(content === "2\u500d") {
+        } else if(content === "2 ") {
             this.controller.playbackRate(3);
-        } else if(content === "3\u500d") {
+        } else if(content === "3 ") {
             this.controller.playbackRate(1);
         } else {
             this.controller.playbackRate(1);

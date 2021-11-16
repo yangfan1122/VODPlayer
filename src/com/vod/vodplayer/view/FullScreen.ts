@@ -67,7 +67,8 @@ export class FullScreen {
             element.webkitRequestFullScreen();
         } else {
             //您的浏览器不支持全屏模式。
-            this.model.alertWindow = "\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u5168\u5c4f\u6a21\u5f0f\u3002";
+            // this.model.alertWindow = "\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301\u5168\u5c4f\u6a21\u5f0f\u3002";
+            this.model.alertWindow = "Your browser does not support full screen";
         }
     }
 

@@ -93,7 +93,8 @@ export class UI {
         const vodMenu:HTMLDivElement = this.div("vodMenu", "vodMenu");
         const vodMenuItem1:HTMLDivElement = this.div("");
         vodMenuItem1.style.display = "none";
-        const vodMenuItem1A:HTMLAnchorElement = this.anchor("#", "\u67e5\u770b\u65e5\u5fd7");//查看日志
+        // const vodMenuItem1A:HTMLAnchorElement = this.anchor("#", "\u67e5\u770b\u65e5\u5fd7");//查看日志
+        const vodMenuItem1A:HTMLAnchorElement = this.anchor("#", "View log");//查看日志
         vodMenuItem1.appendChild(vodMenuItem1A);
         const vodMenuItem2:HTMLDivElement = this.div("");
         const vodMenuItem2A:HTMLAnchorElement = this.anchor("#", "vod", "_blank");
@@ -108,12 +109,14 @@ export class UI {
         //设置
         const vodSettingPanel:HTMLDivElement = this.div("vodSettingPanel", "vodSettingPanel");
         const vodSettingPanelItem1:HTMLDivElement = this.div("");
-        vodSettingPanelItem1.innerHTML = "\u8bbe\u7f6e";//设置
+        // vodSettingPanelItem1.innerHTML = "\u8bbe\u7f6e";//设置
+        vodSettingPanelItem1.innerHTML = "Setting";//设置
         const vodSettingPanelLine:HTMLLIElement = document.createElement("li");
         vodSettingPanelLine.className = "vodSettingPanelLine";
         const vodSettingItems:HTMLDivElement = this.div("vodSettingItems", "vodSettingItems");
         const vodSpeedItem:HTMLDivElement = this.div("", "vodSpeedItem");
-        const vodSpeedItemSpan:HTMLSpanElement = this.span("\u901f\u5ea6");//速度
+        // const vodSpeedItemSpan:HTMLSpanElement = this.span("\u901f\u5ea6");//速度
+        const vodSpeedItemSpan:HTMLSpanElement = this.span("speed");//速度
         vodSpeedItem.appendChild(vodSpeedItemSpan);
         vodSettingItems.appendChild(vodSpeedItem);
         vodSettingPanel.appendChild(vodSettingPanelItem1);
@@ -154,19 +157,22 @@ export class UI {
         //播放速度面板
         const vodRatePanel:HTMLDivElement = this.div("vodRatePanel", "vodRatePanel");
         const vodRatePanelTitle:HTMLDivElement = this.div("vodRatePanelTitle");
-        vodRatePanelTitle.innerHTML = "\u64ad\u653e\u901f\u5ea6";//播放速度
+        // vodRatePanelTitle.innerHTML = "\u64ad\u653e\u901f\u5ea6";//播放速度
+        vodRatePanelTitle.innerHTML = "speed";//播放速度
         const vodRatePanelInputs:HTMLDivElement = this.div("");
         const vodRatePanelInput1:HTMLInputElement = this.input("radio", "1");
         const vodRatePanelInput2:HTMLInputElement = this.input("radio", "2");
         const vodRatePanelInput3:HTMLInputElement = this.input("radio", "3");
         vodRatePanelInputs.appendChild(vodRatePanelInput1);
-        vodRatePanelInputs.innerHTML += "\u9ed8\u8ba4";//默认
+        // vodRatePanelInputs.innerHTML += "\u9ed8\u8ba4";//默认
+        vodRatePanelInputs.innerHTML += "Default";//默认
         vodRatePanelInputs.appendChild(vodRatePanelInput2);
-        vodRatePanelInputs.innerHTML += "2\u500d ";
+        vodRatePanelInputs.innerHTML += "2 ";
         vodRatePanelInputs.appendChild(vodRatePanelInput3);
-        vodRatePanelInputs.innerHTML += "3\u500d ";
+        vodRatePanelInputs.innerHTML += "3 ";
         const vodRatePanelClose:HTMLDivElement = this.div("vodRatePanelClose", "vodRatePanelClose");
-        vodRatePanelClose.innerHTML = "[\u5173\u95ed]";//关闭
+        // vodRatePanelClose.innerHTML = "[\u5173\u95ed]";//关闭
+        vodRatePanelClose.innerHTML = "[Close]";//关闭
         vodRatePanel.appendChild(vodRatePanelTitle);
         vodRatePanel.appendChild(vodRatePanelInputs);
         vodRatePanel.appendChild(vodRatePanelClose);
