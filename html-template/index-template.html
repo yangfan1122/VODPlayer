@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>VODPlayer html template</title>
 
-    <script data-main="../dist/VODPlayer.js" src="require.js"></script>
+    <script data-main="dist/VODPlayer.js" src="require.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/vodplayerstyle.css"/>
     <style>
         body {
@@ -29,6 +29,7 @@
 </head>
 <body>
 <div class="outer" id="outer">
+    <div id="vodcontainer"></div>
  <script>
     require(["VODPlayer"], function (VODPlayer) {
         //参数值都是字符
@@ -58,18 +59,6 @@
 
 
 </div>
-<script>
-    var container = document.getElementById("outer");
-    var bigger = document.getElementById("bigger");
-    var smaller = document.getElementById("smaller");
-    bigger.onclick = function() {
-        container.style.width = "640px";
-    }
-    smaller.onclick = function() {
-        container.style.width = "340px";
-    }
-
-</script>
 <script>
     function clearconsole() {
         document.getElementById("vodConsole").innerHTML = "";

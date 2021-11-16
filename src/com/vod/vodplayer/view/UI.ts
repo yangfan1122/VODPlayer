@@ -167,9 +167,9 @@ export class UI {
         // vodRatePanelInputs.innerHTML += "\u9ed8\u8ba4";//默认
         vodRatePanelInputs.innerHTML += "Default";//默认
         vodRatePanelInputs.appendChild(vodRatePanelInput2);
-        vodRatePanelInputs.innerHTML += "2 ";
+        vodRatePanelInputs.innerHTML += "2x";
         vodRatePanelInputs.appendChild(vodRatePanelInput3);
-        vodRatePanelInputs.innerHTML += "3 ";
+        vodRatePanelInputs.innerHTML += "3x";
         const vodRatePanelClose:HTMLDivElement = this.div("vodRatePanelClose", "vodRatePanelClose");
         // vodRatePanelClose.innerHTML = "[\u5173\u95ed]";//关闭
         vodRatePanelClose.innerHTML = "[Close]";//关闭
