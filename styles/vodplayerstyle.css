@@ -493,9 +493,10 @@
     -ms-user-select: none;
     user-select: none;
     position: relative;
-    height: 24px;
+    height: 32px;
+    line-height: 32px;
     padding-left: 8px;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
     background-color:rgba(0,0,0,0.5);
     vertical-align: middle;
     horiz-align: left;
