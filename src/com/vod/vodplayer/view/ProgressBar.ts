@@ -180,8 +180,10 @@ export class ProgressBar {
             window.document.addEventListener("mouseup", this.tempSliderHandler);
             window.document.addEventListener("mousemove", this.tempSliderHandler);
 
-            this.oldX = event.layerX || event.offsetX;
-            this.oldY = event.layerY || event.offsetY;
+            // this.oldX = event.layerX || event.offsetX;
+            this.oldX = event.clientX || event.offsetX;
+            // this.oldY = event.layerY || event.offsetY;
+            this.oldY = event.clientY || event.offsetY;
         } else if(event.type === "mouseup") {
             document.body.onselectstart = null;
             window.document.removeEventListener("mouseup", this.tempSliderHandler);

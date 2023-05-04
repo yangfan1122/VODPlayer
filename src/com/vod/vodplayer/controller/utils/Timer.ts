@@ -26,7 +26,7 @@ export class Timer {
 
     public start(): void {
         // window.setTimeout(this.intervalHandler, this.time);
-        this.timer = setInterval(this.timerHandler.bind(this), this.time);
+        this.timer = window.setInterval(this.timerHandler.bind(this), this.time);
     }
     // private intervalHandler():void {
     //     this.timerHandler();

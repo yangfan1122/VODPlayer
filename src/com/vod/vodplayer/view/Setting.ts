@@ -107,7 +107,8 @@ export class Setting {
         } else if(display !== "block") {
             this.model.u.display("vodSettingPanel", "block");
             this.model.u.e("vodSettingPanel").style.left = (G.stageWidth[this.model.idHeader].stageWidth-156)+"px";
-            this.model.u.e("vodSettingPanel").style.top = (G.stageHeight[this.model.idHeader].stageHeight-129)+"px";//距下间距和清晰度菜单一致
+            // this.model.u.e("vodSettingPanel").style.top = (G.stageHeight[this.model.idHeader].stageHeight-129)+"px";//距下间距和清晰度菜单一致
+            this.model.u.e("vodSettingPanel").style.top = (document.getElementById("vodcontainer").getBoundingClientRect().height - 135) + "px";
             event.stopPropagation();
             window.document.addEventListener("click", this.tempClickHandler);
 

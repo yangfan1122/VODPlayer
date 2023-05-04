@@ -1,6 +1,6 @@
 {
   "name": "vodplayer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Video player",
   "main": "./dist/VODPlayer.js",
   "style": "./styles/vodplayerstyle.css",
@@ -15,7 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "rimraf": "^2.6.3",
-    "typescript": "^3.5.3"
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
   },
   "homepage": "https://github.com/yangfan1122/VODPlayer#readme",
   "files": [
@@ -24,7 +27,6 @@
     "styles"
   ],
   "devDependencies": {
-    "css-loader": "^3.1.0",
-    "style-loader": "^0.23.1"
+    "css-loader": "^6.5.1"
   }
 }

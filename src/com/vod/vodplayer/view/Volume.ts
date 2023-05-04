@@ -128,7 +128,7 @@ export class Volume {
             window.document.addEventListener("mouseup", this.tempSliderHandler);
             window.document.addEventListener("mousemove", this.tempSliderHandler);
 
-            this.oldX = event.pageX || event.layerX || event.offsetX;
+            this.oldX = event.pageX || event.clientX || event.offsetX;
             this.oldWidth = this.model.u.e("vodVolumeMoving").clientWidth;
         } else if(event.type === "mouseup") {
             document.body.onselectstart = null;

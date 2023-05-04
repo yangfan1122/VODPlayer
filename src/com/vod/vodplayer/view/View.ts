@@ -84,7 +84,7 @@ export class View {
 
         let sum: number = 0
         let w: any
-        const t: number = setInterval(() => {
+        const t: number = window.setInterval(() => {
             if (sum++ >= 30) {
                 clearInterval(t)
                 console.warn("It's better to check your value of requireJSPath.")

@@ -45,7 +45,7 @@ export class HLSVideo {
         let loadModel: any = require || w.require
         loadModel([HLSPath], (HLS: any) => {
             D.d("HLS Lib loaded");
-            self.HLSStatic = HLS;
+            self.HLSStatic = `${HLS}`;
             if(this.model.hlsSrc.length > 0) {
                 //第一次E.HLS_SRC会在HLSLib加载好之前触发
                 //hlsSrc赋过值后手动loadHLS()

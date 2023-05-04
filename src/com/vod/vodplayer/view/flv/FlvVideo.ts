@@ -48,7 +48,7 @@ export class FlvVideo {
         let loadModel: any = require || w.require
         loadModel([flvPath], (flv: any) => {
             D.d("flv.js Lib loaded");
-            self.flvStatic = flv;
+            self.flvStatic = `${flv}`;
             self.flvjs = flv.flvjs;
             if(this.model.flvSrc.length > 0) {
                 self.loadFlv();
