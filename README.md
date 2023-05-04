@@ -103,7 +103,7 @@ export default App;
 
 ## Contributing
 
-VODPlayer is a open source project. I'm glad of any sugestions and [bug report](https://github.com/yangfan1122/VODPlayer/issues).
+VODPlayer is an open source project. I'm glad of any suggestions and [bug report](https://github.com/yangfan1122/VODPlayer/issues).
 
 ## Acknowledgments
 
